@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eye See You - SMU VCD</title>
+    <link rel="stylesheet" type="text/css" href="pages/css/eye.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700" rel="stylesheet">
+</head>
+
+<body>
+    <div id="start_contents">
+        <div class="pos1">
+            <div class="eye"></div>
+        </div>
+        <div class="pos2">
+            <div class="ball-area">
+                <div class="ball"></div>
+            </div>
+        </div>
+    </div>
+    <div class="go-pos">
+        <a id="go-btn" href="pages/main_home.html">GO</a>
+    </div>
+    </div>
+    <script type="text/javascript">
+        var ball = document.getElementsByClassName("ball");
+        function eyeMove() {
+            var x = event.clientX / window.innerWidth * 100 + "%";
+            var y = event.clientY / window.innerHeight * 100 + "%";
+            ball[0].style.left = x;
+            ball[0].style.top = y;
+            ball[0].style.transform = "translate(-" + x + ",-" + y + ")";
+        }
+        window.addEventListener('mousemove', eyeMove);
+    </script>
+</body>
+
+</html>

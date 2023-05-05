@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style-sub.css" />
+    <link rel="stylesheet" type="text/css" href="css/map.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@300;700" rel="stylesheet">
+</head>
+
+<body class="main-contents">
+    <h1><span id="main_slogan">디지털 컨버젼스 혁명을 주도하는</span><br /><span id="main_title">커뮤니케이션디자인전공</span></h1>
+    <p>상명대학교 커뮤니케이션디자인전공에 오신 것을 환영합니다!</p>
+    <h3>학과 소개</h3>
+    <p>커뮤니케이션디자인전공(구: 시각디자인전공)은 급진적인 디자인 환경 변화와 새로운 패러다임에 대응하여, 21세기에 필요한 전문이론과 실무능력을 겸비한 창의적이고 상호 교류가 가능한 열린 사고를 가진
+        인재 양성을 궁극적인 목표로, 디지털 컨버전스 혁명을 주도하는 전문 커뮤니케이션디자이너의 양성에 역점을 두어 교육합니다.</p>
+    <p class="precaut">※명칭이 바뀐 것은 2019년이기 때문에 아직까지 커디보다는 시디가 익숙한 학생들이 더 많다. 신입생들이 커디라고 하면 고학번들이 못 알아듣는다.</p>
+    <p class="precaut">※영문 명칭은 'Visual Communication Design'이다. 줄여서 VCD.</p>
+    <h3>커뮤니케이션디자인전공 학과사무실</h3>
+    <ul>
+        <li>운영시간 : 근무시간 오전 9:00 ~ 오후 5:30 / 점심시간 12:00 ~ 1:00</li>
+        <li>전화번호 : <span class="copynum" id="copynum_office1" onclick="copyText(this.id)">041-550-5192</span></li>
+        <li>팩　　스 : <span class="copynum" id="copynum_office2" onclick="copyText(this.id)">041-550-5189</span></li>
+        <li>위　　치 : (우:03016) 천안시 안서동 상명대길 31 상명대학교 천안캠퍼스 디자인대학 4층 D407호</li>
+    </ul>
+    <h3>학교 지도</h3>
+    <div class="map">
+    <img src="images/smu_map.png" alt="상명대학교 지도">
+    <button class="map-btn" id="btnA">Ａ<span class="btntext">청록관</span></button>
+    <button class="map-btn" id="btnB">Ｂ<span class="btntext">상록관</span></button>
+    <button class="map-btn" id="btnC">Ｃ<span class="btntext">본관</span></button>
+    <button class="map-btn" id="btnD">Ｄ<span class="btntext">디자인관</span></button>
+    <button class="map-btn" id="btnE">Ｅ<span class="btntext">송백관</span></button>
+    <button class="map-btn" id="btnF">Ｆ<span class="btntext">종합실기관</span></button>
+    <button class="map-btn" id="btnH">Ｈ<span class="btntext">학생회관</span></button>
+    <button class="map-btn" id="btnI">Ｉ<span class="btntext">한누리관</span></button>
+    <button class="map-btn" id="btnK">Ｋ<span class="btntext">스포츠센터</span></button>
+    <button class="map-btn" id="btnL">Ｌ<span class="btntext">도서관</span></button>
+    <button class="map-btn" id="btnN">Ｎ<span class="btntext">식물과학관</span></button>
+    <button class="map-btn" id="btnV">Ｖ<span class="btntext">노천극장</span></button>
+    <button class="map-btn" id="btnW">Ｗ<span class="btntext">기숙사</span></button>
+</div>
+<span class="precaut">※지도 이미지 출처: 네이버 지도</span>
+    <script type="text/javascript">
+        function copyText(id) {
+            var copytext = document.getElementById(id).innerText;
+            var txt = document.createElement("textarea");
+            document.body.appendChild(txt);
+            txt.value = copytext;
+            txt.select();
+            document.execCommand("copy");
+            document.body.removeChild(txt);
+            alert("전화번호가 복사되었습니다.");
+        }
+    </script>
+</body>
+
+</html>

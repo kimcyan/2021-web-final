@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>학점이수계획표 - SMU VCD</title>
+    <link rel="stylesheet" type="text/css" href="css/style-plan.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700" rel="stylesheet">
+</head>
+
+<body class="main-contents">
+    <h2>학점이수계획표</h2>
+    <p class="precaut">전선: 전공선택　　교필: 교양필수　　교선: 교양선택　　일선: 일반선택　　학기: 학부기초(전공으로 취급)　　2전선: 제 2전공선택(다/부전공)</p>
+    <table class="table-plan">
+        <tbody>
+            <tr>
+                <td class="table-gray">학년</td>
+                <td colspan="6" class="grade1">1학년</td>
+                <td colspan="6" class="grade2">2학년</td>
+            </tr>
+            <tr>
+                <td class="table-gray">학기</td>
+                <td colspan="3" class="grade1">1학기</td>
+                <td colspan="3" class="grade1">2학기</td>
+                <td colspan="3" class="grade2">1학기</td>
+                <td colspan="3" class="grade2">2학기</td>
+            </tr>
+            <tr class="table-gray">
+                <td>구분</td>
+                <td>이수구분</td>
+                <td>교과목명</td>
+                <td>학점</td>
+                <td>이수구분</td>
+                <td>교과목명</td>
+                <td>학점</td>
+                <td>이수구분</td>
+                <td>교과목명</td>
+                <td>학점</td>
+                <td>이수구분</td>
+                <td>교과목명</td>
+                <td>학점</td>
+            </tr>
+            <tr>
+                <script type="text/javascript">
+                    for (classNum = 0; classNum < 10; classNum++) {
+                        document.write('<td class="table-gray">'+ (classNum+1) + '</td>');
+                        for (szn = 1; szn <= 4; szn++) {
+                            document.write('<td><select name="class"><option value="major1" selected>1전공</option><option value="major-adv1">1전심</option><option value="major-bas1">1학기</option><option value="elec-pre">교필</option><option value="elec">교선</option><option value="general">일선</option>');
+                            document.write('<option value="major2">2전공</option><option value="major-adv2">2전심</option><option value="major-bas2">2학기</option>');
+                            document.write('</select></td>');
+                            document.write('<td><input type="text"></td><td><input name="class" type="number" min="0" max="10" value="0"></td>');
+                        }
+                        document.write('</tr>');
+                    }
+                </script>
+            <tr class="table-gray2">
+                <td>합계</td>
+                <td colspan="2">1학년 1학기</td>
+                <td><input id="t11" type="number" value="0" readonly></td>
+                <td colspan="2">1학년 2학기</td>
+                <td><input id="t12" type="number" value="0" readonly></td>
+                <td colspan="2">2학년 1학기</td>
+                <td><input id="t21" type="number" value="0" readonly></td>
+                <td colspan="2">2학년 2학기</td>
+                <td><input id="t22" type="number" value="0" readonly></td>
+            </tr>
+            <tr>
+                <td class="table-gray">학년</td>
+                <td colspan="6" class="grade3">3학년</td>
+                <td colspan="6" class="grade4">4학년</td>
+            </tr>
+            <tr>
+                <td class="table-gray">학기</td>
+                <td colspan="3" class="grade3">1학기</td>
+                <td colspan="3" class="grade3">2학기</td>
+                <td colspan="3" class="grade4">1학기</td>
+                <td colspan="3" class="grade4">2학기</td>
+            </tr>
+            <tr class="table-gray">
+                <td>구분</td>
+                <td>이수구분</td>
+                <td>교과목명</td>
+                <td>학점</td>
+                <td>이수구분</td>
+                <td>교과목명</td>
+                <td>학점</td>
+                <td>이수구분</td>
+                <td>교과목명</td>
+                <td>학점</td>
+                <td>이수구분</td>
+                <td>교과목명</td>
+                <td>학점</td>
+            </tr>
+            <tr>
+                <script type="text/javascript">
+                    for (classNum = 0; classNum < 10; classNum++) {
+                        document.write('<td class="table-gray">'+ (classNum+1) + '</td>');
+                        for (szn = 1; szn <= 4; szn++) {
+                            document.write('<td><select name="class"><option value="major1" selected>1전공</option><option value="major-adv1">1전심</option><option value="major-bas1">1학기</option><option value="elec-pre">교필</option><option value="elec">교선</option><option value="general">일선</option>');
+                            document.write('<option value="major2">2전공</option><option value="major-adv2">2전심</option><option value="major-bas2">2학기</option>');
+                            document.write('</select></td>');
+                            document.write('<td><input type="text"></td><td><input name="class" type="number" min="0" max="10" value="0"></td>');
+                        }
+                        document.write('</tr>');
+                    }
+                </script>
+            <tr class="table-gray2">
+                <td>합계</td>
+                <td colspan="2">3학년 1학기</td>
+                <td><input id="t31" type="number" value="0" readonly></td>
+                <td colspan="2">3학년 2학기</td>
+                <td><input id="t32" type="number" value="0" readonly></td>
+                <td colspan="2">4학년 1학기</td>
+                <td><input id="t41" type="number" value="0" readonly></td>
+                <td colspan="2">4학년 2학기</td>
+                <td><input id="t42" type="number" value="0" readonly></td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <table class="table-total">
+        <thead>
+            <tr>
+                <th>이수구분</th>
+                <th>1전공</th>
+                <th>1전심</th>
+                <th>1학기</th>
+                <th>교필</th>
+                <th>교선</th>
+                <th>일선</th>
+                <th>2전공</th>
+                <th>2전심</th>
+                <th>2학기</th>
+                <th>총합</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>이수학점</th>
+                <td><input id="tmajor1" type="number" value="0" readonly></td>
+                <td><input id="tmajor-adv1" type="number" value="0" readonly></td>
+                <td><input id="tmajor-bas1" type="number" value="0" readonly></td>
+                <td><input id="telec-pre" type="number" value="0" readonly></td>
+                <td><input id="telec" type="number" value="0" readonly></td>
+                <td><input id="tgeneral" type="number" value="0" readonly></td>
+                <td><input id="tmajor2" type="number" value="0" readonly></td>
+                <td><input id="tmajor-adv2" type="number" value="0" readonly></td>
+                <td><input id="tmajor-bas2" type="number" value="0" readonly></td>
+                <td><input id="total" type="number" value="0" readonly></td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript">
+        function changeValue() {
+            var S = document.getElementsByName("class");
+            var total_value = [0, 0, 0, 0, 0, 0, 0, 0];
+            var class_total = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+            for (i = 0; i < S.length; i++) {
+                if(i<S.length/2){
+                switch (i % 8) {
+                    case 1:
+                        total_value[0] += parseInt(S[i].value);
+                        break;
+                    case 3:
+                        total_value[1] += parseInt(S[i].value);
+                        break;
+                    case 5:
+                        total_value[2] += parseInt(S[i].value);
+                        break;
+                    case 7:
+                        total_value[3] += parseInt(S[i].value);
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else{
+                switch (i % 8) {
+                    case 1:
+                        total_value[4] += parseInt(S[i].value);
+                        break;
+                    case 3:
+                        total_value[5] += parseInt(S[i].value);
+                        break;
+                    case 5:
+                        total_value[6] += parseInt(S[i].value);
+                        break;
+                    case 7:
+                        total_value[7] += parseInt(S[i].value);
+                        break;
+                    default:
+                        break;
+                }
+            }
+                if (i % 2 == 0) {
+                    switch (S[i].selectedIndex) {
+                        case 0:
+                            class_total[0] += parseInt(S[i + 1].value);
+                            break;
+                        case 1:
+                            class_total[1] += parseInt(S[i + 1].value);
+                            break;
+                        case 2:
+                            class_total[2] += parseInt(S[i + 1].value);
+                            break;
+                        case 3:
+                            class_total[3] += parseInt(S[i + 1].value);
+                            break;
+                        case 4:
+                            class_total[4] += parseInt(S[i + 1].value);
+                            break;
+                        case 5:
+                            class_total[5] += parseInt(S[i + 1].value);
+                            break;
+                        case 6:
+                            class_total[6] += parseInt(S[i + 1].value);
+                            break;
+                        case 7:
+                            class_total[7] += parseInt(S[i + 1].value);
+                            break;
+                        case 8:
+                            class_total[8] += parseInt(S[i + 1].value);
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+            document.getElementById("t11").value = total_value[0];
+            document.getElementById("t12").value = total_value[1];
+            document.getElementById("t21").value = total_value[2];
+            document.getElementById("t22").value = total_value[3];
+            document.getElementById("t31").value = total_value[4];
+            document.getElementById("t32").value = total_value[5];
+            document.getElementById("t41").value = total_value[6];
+            document.getElementById("t42").value = total_value[7];
+            document.getElementById("tmajor1").value = class_total[0];
+            document.getElementById("tmajor-adv1").value = class_total[1];
+            document.getElementById("tmajor-bas1").value = class_total[2];
+            document.getElementById("telec-pre").value = class_total[3];
+            document.getElementById("telec").value = class_total[4];
+            document.getElementById("tgeneral").value = class_total[5];
+            document.getElementById("tmajor2").value = class_total[6];
+            document.getElementById("tmajor-adv2").value = class_total[7];
+            document.getElementById("tmajor-bas2").value = class_total[8];
+            document.getElementById("total").value = class_total[0]+class_total[1]+class_total[2]+class_total[3]+class_total[4]+class_total[5]+class_total[6]+class_total[7]+class_total[8];
+        }
+        window.addEventListener("change", changeValue);
+    </script>
+    <br />
+</body>
+
+</html>

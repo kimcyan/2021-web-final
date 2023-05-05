@@ -1,0 +1,65 @@
+body {
+    margin:0;
+    padding:0;
+    background-color:#132d6a;
+}
+#start_contents {
+    width:100%;
+    position:absolute;
+    margin:auto;
+    top:30%;
+    text-align:center;
+}
+.pos1 {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.pos2 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top:40px;
+}
+.eye {
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius:100% 0;
+    margin: 0 auto;
+    transform: rotate(45deg);
+}
+.ball-area {
+    width: 240px;
+    height: 120px;
+    position: relative;
+    border-radius:50%;
+    display:inline-block;
+}
+.ball {
+    width: 80px;
+    height: 80px;
+    background: #132d6a;
+    border-radius: 50%;
+    position: absolute;
+}
+.go-pos {
+    top:53%;
+    width:100%;
+    position:absolute;
+    margin:auto;
+    text-align:center;
+}
+#go-btn {
+    text-decoration: none;
+    font-family: 'Noto Sans KR', san-serif;
+    padding: 8px 45px;
+    border-radius:20px;
+    background-color:#254796;
+    color: #132d6a;
+    font-size: 20px;
+}
+#go-btn:hover {
+    background-color:white;
+}

@@ -1,0 +1,76 @@
+/*지도*/
+.map {
+    position: relative;
+}
+.map img {
+    width:100%;
+    height: auto;
+}
+.map .map-btn {
+    position: absolute;
+    background-color: #132d6a;
+    color: white;
+    font-size: 16px;
+    padding: 5px 9px 7px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+#btnA {
+    top: 50%; left: 10%;
+}
+#btnB {
+    top: 43%; left: 17%;
+}
+#btnC {
+    top: 31%; left: 25%;
+}
+#btnD {
+    top: 60%; left: 77%;
+}
+#btnE {
+    top: 16%; left: 59%;
+}
+#btnF {
+    top: 34%; left: 85%;
+}
+#btnH {
+    top: 40%; left: 61%;
+}
+#btnI {
+    top: 26%; left: 46%;
+}
+#btnK {
+    top: 68%; left: 64%;
+}
+#btnL {
+    top: 50%; left: 30%;
+}
+#btnN {
+    top: 14%; left: 8%;
+}
+#btnV {
+    top: 54%; left: 42%;
+}
+#btnW {
+    top: 15%; left: 86%;
+}
+.map .map-btn:hover {
+    background-color: #3F61A5;
+}
+
+.btntext {
+    visibility: hidden;
+    background-color: #132d6a;
+    text-align: center;
+    padding: 7px 10px 9px;
+    border-radius: 7px;
+    position: absolute;
+    bottom:100%;
+    z-index: 1;
+    opacity: 0;
+}
+  .map .map-btn:hover .btntext{
+    visibility: visible;
+    opacity: 1;
+}

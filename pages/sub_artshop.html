@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style-sub.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700" rel="stylesheet">
+</head>
+
+<body class="main-contents">
+    <h2>화방 위치</h2>
+    <p class="precaut">※급한 게 아니라면 온라인으로 주문하는 게 저렴하다.</p>
+    <table class="table-basic">
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>위치</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>디대 화방</td>
+                <td class="table-p">상명대학교 천안캠퍼스 디자인대학 1층 D108호<br /><span class="copynum" id="copynum4" onclick="copyText(this.id)">041-623-0213</span><br />9:00 ~ 18:00 주말 휴무<br />없는 재료가 많아서 다른 곳 가는 걸 추천함. 과제에 공통으로 사용되는 재료는 있음.</td>
+            </tr>
+            <tr>
+                <td>천안단국화방</td>
+                <td class="table-p">단국대학교 천안캠퍼스 예술대학 A동 지하<br /><span class="copynum" id="copynum5" onclick="copyText(this.id)">041-563-6919</span><br />10:00 ~ 19:00 (방학 11:00 ~ 18:00) 주말 휴무<br />없는 게 없음.</td>
+            </tr>
+            <tr>
+                <td>파랑화방</td>
+                <td class="table-p">충남 천안시 동남구 대흥로 333 (터미널에서 방죽안오거리쪽 입시미술학원 모여 있는 곳)<br /><span class="copynum" id="copynum6" onclick="copyText(this.id)">041-557-0414</span></td>
+            </tr>
+            <tr>
+                <td>알파 천안법원점</td>
+                <td class="table-p">충남 천안시 동남구 충절로 30 온양빌딩 (터미널 사거리쪽 올리브영 건너편 방향으로)<br /><span class="copynum" id="copynum7" onclick="copyText(this.id)">041-563-2556</span><br />8:30 ~ 21:00 (토요일 8:30 ~ 20:00 일요일 휴무)</td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript">
+        function copyText(id) {
+            var copytext = document.getElementById(id).innerText;
+            var txt = document.createElement("textarea");
+            document.body.appendChild(txt);
+            txt.value = copytext;
+            txt.select();
+            document.execCommand("copy");
+            document.body.removeChild(txt);
+            alert("전화번호가 복사되었습니다.");
+        }
+    </script>
+</body>
+
+</html>

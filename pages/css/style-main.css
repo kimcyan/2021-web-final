@@ -1,0 +1,91 @@
+html {
+    background-color: #F6FBFE;
+}
+#main_wrap {
+    width: 1200px;
+    margin: auto;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#logo_img {
+    display:flex;
+}
+#eye {
+    padding: 0 10px;
+    width: 25%;
+    height:auto;
+    margin:auto;
+    opacity:0.2;
+}
+#eye:hover {
+    opacity:1;
+}
+#smu_logo {
+    width: 60%;
+    height:auto;
+    opacity:0.2;
+}
+#smu_logo:hover {
+    opacity:1;
+}
+#header_logo {
+    display: block;
+    font-size: 27px;
+    font-family: 'Gugi', cursive;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+}
+hr {
+    margin:0;
+    border-color:#254796;
+}
+#left_sidebar {
+    width: 300px;
+    height: 99vh;
+    min-height: 690px;
+    position: relative;
+    float: left;
+    background-color: #132d6a;
+    color: white;
+}
+nav {
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+}
+nav ul {
+    margin: 0;
+    padding: 15px;
+}
+nav ul li {
+    list-style: none;
+   
+}
+nav a {
+    display: block;
+    text-align: center;
+    color: white;
+    height: 30px;
+    text-decoration:none;
+    padding: 15px 10px;
+}
+nav a:hover {
+    color: #132d6a;
+    background-color: white;
+}
+#main_contents {
+    float: right;
+    padding-left: 10px;
+    border: none;
+    width: 890px;
+    height: 99vh;
+    min-height: 690px;
+    background-color:white;
+}
+footer {
+    position: absolute;
+    bottom: 20px;
+    padding-left: 20px;
+    opacity:0.5;
+}

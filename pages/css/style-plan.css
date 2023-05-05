@@ -1,0 +1,100 @@
+html {
+    background-color: #F6FBFE;
+}
+body {
+    font-size: 18px;
+}
+.main-contents {
+    font-family: 'Noto Sans KR', sans-serif;
+    word-break: keep-all;
+    width: 980px;
+    margin:auto;
+    text-align: center;
+    background-color: white;
+}
+h2 {
+    margin-top:0;
+    padding-top:15px;
+}
+.precaut {
+    font-size: 80%;
+}
+/*표*/
+.table-plan {
+    border: 1px solid #cccccc;
+    border-spacing:0;
+    border-collapse:collapse;
+    text-align:center;
+    font-size:16px;
+    margin:auto;
+}
+.table-plan tr td{
+    border:1px solid #cccccc;
+}
+
+.table-gray {
+    background-color: #eeeeee;
+}
+
+.table-gray2 {
+    background-color: #aaaaaa;
+}
+
+.table-total {
+    border: 1px solid #cccccc;
+    border-spacing:0;
+    border-collapse:collapse;
+    text-align:center;
+    font-size:16px;
+    margin:auto;
+}
+.table-total tr td {
+    border:1px solid #cccccc;
+}
+.table-total tr th {
+    border:1px solid #cccccc;
+    background-color:#eeeeee;
+    width: 70px;
+}
+.grade1 {
+    background-color:#FDE3F4;
+}
+.grade2 {
+    background-color:#DAEEF3;
+}
+.grade3 {
+    background-color:#EBF1DE;
+}
+.grade4 {
+    background-color:#E4DFEC;
+}
+/*폼*/
+select {
+    border:0px solid #cccccc;
+    margin:0;
+    background:transparent;
+}
+input{
+    border:0;
+    margin:0;
+    background:transparent;
+    outline:none;
+}
+input[type='text']{
+    width: 125px;
+}
+input[type='number']{
+    width: 30px;
+}
+/* 스크롤바 */
+::-webkit-scrollbar {
+    width:10px;
+    height:10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #bbbbbb;
+    border-radius:5px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color:#132d6a;
+}
